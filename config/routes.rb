@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   get "/pets/:id",     controller: "pets", action: "show"
   patch "/pets/:id",   controller: "pets", action: "update"
   delete  "/pets/:id", controller: "pets", action: "destroy"
+
+  # Users Controller Routes
+  post "/users",       controller: "users", action: "create"
 end
